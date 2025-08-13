@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup - Let's Find</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Segoe UI", sans-serif;
+        }
+
+        body {
+            background-color: #f9f9f9;
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #111;
+            color: white;
+            padding: 12px 30px;
+        }
+
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar .logo span {
+            color: #7c3aed;
+            margin-left: 6px;
+        }
+
+        .navbar .nav-links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .navbar .nav-links a {
+            padding: 8px 14px;
+            border-radius: 5px;
+            text-decoration: none;
+            color: white;
+            background-color: #4b5563;
+            font-weight: 500;
+        }
+
+        .navbar .nav-links a.signup {
+            background-color: #7c3aed;
+        }
+
+        /* Signup Form */
+        .signup-container {
+            max-width: 450px;
+            margin: 50px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+        }
+
+        .signup-container h2 {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .signup-container label {
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 6px;
+            font-weight: 500;
+        }
+
+        .signup-container input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        .signup-container button {
+            width: 100%;
+            padding: 12px;
+            background-color: #7c3aed;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 6px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+        .bottom-text {
+            margin-top: 15px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .bottom-text a {
+            color: #6366f1;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .bottom-text a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive */
+        @media (max-width: 500px) {
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .nav-links {
+                margin-top: 10px;
+                flex-direction: column;
+                gap: 8px;
+            }
+
+            .signup-container {
+                margin: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Let<span>'s</span> Find</div>
+        <div class="nav-links">
+            <a href="login.html">Login</a>
+            <a href="signup.html" class="signup">Signup</a>
+        </div>
+    </nav>
+
+    <!-- Signup Form -->
+    <div class="signup-container">
+        <h2>Create an Account</h2>
+        <form onsubmit="handleSignup(event)">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="fname" required />
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lname" required />
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required />
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required />
+
+            <label for="cpassword">Confirm Password</label>
+            <input type="password" id="cpassword" name="cpassword" required />
+
+            <button type="submit">Signup</button>
+        </form>
+
+        <p class="bottom-text">
+            Already have an account? <a href="login.html">Login</a>
+        </p>
+    </div>
+
+    <script>
+        function handleSignup(e) {
+            e.preventDefault();
+
+            const fname = document.getElementById("fname").value.trim();
+            const lname = document.getElementById("lname").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const phone = document.getElementById("phone").value.trim();
+            const password = document.getElementById("password").value;
+            const cpassword = document.getElementById("cpassword").value;
+
+            if (password !== cpassword) {
+                alert("Passwords do not match!");
+                return;
+            }
+
+            // Store user data temporarily (only for demo/testing)
+            localStorage.setItem("username", email);
+            localStorage.setItem("password", password);
+            localStorage.setItem("firstName", fname);
+            localStorage.setItem("lastName", lname);
+            localStorage.setItem("phone", phone);
+
+            alert("Signup successful! Redirecting to login...");
+            window.location.href = "login.html"; // ✅ Redirect to login
+        }
+    </script>
+</body>
+
+</html>
