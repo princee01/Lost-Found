@@ -50,14 +50,14 @@ No external dependencies required – just a modern web browser.
 
 📸 UI Previews
 
-<img width="1428" height="593" alt="Screenshot 2025-08-19 182712" src="https://github.com/user-attachments/assets/fe07de97-78df-4b07-8e51-b8942c56db3a" />
-
 
 <img width="1880" height="934" alt="Screenshot 2025-08-19 182724" src="https://github.com/user-attachments/assets/09788b67-9ee9-4f4c-b5f5-a2939f5e47fb" />
 
 <img width="1815" height="810" alt="Screenshot 2025-08-19 182749" src="https://github.com/user-attachments/assets/98d8a718-dd53-45e3-b044-04e160a3d44a" />
 
 <img width="1753" height="332" alt="Screenshot 2025-08-19 182809" src="https://github.com/user-attachments/assets/08d5ed75-27e3-4a08-9793-de9431447fa2" />
+
+<img width="1911" height="912" alt="Screenshot 2025-08-19 183019" src="https://github.com/user-attachments/assets/d1408b5f-c846-4b75-9127-8b8c243c7990" />
 
 
 
@@ -101,5 +101,4 @@ This project is licensed under the MIT License – see the LICENSE file for deta
 
 Prince
 B.Tech CSE | Developer | MERN & Software Enthusiast
-GitHub
- | LinkedIn
+
