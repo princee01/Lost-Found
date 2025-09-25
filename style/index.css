@@ -1,0 +1,272 @@
+/* body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color:aliceblue;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 40px;
+    background-color: #111;
+    color: white;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.logo img {
+    height: 30px;
+    margin-right: 10px;
+}
+
+.hq {
+    font-size: 0.6rem;
+    vertical-align: super;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav .dropdown {
+    position: relative;
+    cursor: pointer;
+}
+
+.nav .badge {
+    background-color: #a855f7;
+    color: white;
+    font-size: 10px;
+    padding: 2px 4px;
+    border-radius: 4px;
+    margin-right: 5px;
+    font-weight: 600;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+}
+
+.login-btn {
+    background-color: #4b4b4b;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 4px;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.start-btn {
+    background-color: #a855f7;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 4px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ body {
+     margin: 0;
+     font-family: 'Inter', sans-serif;
+     background-color: aliceblue;
+ }
+
+ .header {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 12px 40px;
+     background-color: #111;
+     color: white;
+ }
+
+ .logo {
+     display: flex;
+     align-items: center;
+     font-size: 1.2rem;
+     font-weight: 600;
+ }
+
+ .logo img {
+     height: 30px;
+     margin-right: 10px;
+ }
+
+ .hq {
+     font-size: 0.6rem;
+     vertical-align: super;
+ }
+
+ .nav {
+     display: flex;
+     gap: 20px;
+     align-items: center;
+     position: relative;
+ }
+
+ .dropdown {
+     position: relative;
+     cursor: pointer;
+ }
+
+ .dropdown-options {
+     position: absolute;
+     top: 100%;
+     left: 0;
+     background: white;
+     color: black;
+     border: 1px solid #ddd;
+     display: none;
+     flex-direction: column;
+     z-index: 10;
+ }
+
+ .dropdown-options div {
+     padding: 8px 12px;
+     cursor: pointer;
+ }
+
+ .dropdown-options div:hover {
+     background-color: #f0f0f0;
+ }
+
+ .nav a,
+ .lost-items {
+     text-decoration: none;
+     color: white;
+     font-weight: 500;
+     cursor: pointer;
+ }
+
+ .actions {
+     display: flex;
+     gap: 10px;
+ }
+
+ .start-btn {
+     background-color: #a855f7;
+     border: none;
+     padding: 8px 14px;
+     border-radius: 4px;
+     color: white;
+     font-weight: 600;
+     cursor: pointer;
+ }
+
+ .form-container {
+     background: white;
+     padding: 20px;
+     margin: 20px auto;
+     width: 90%;
+     max-width: 500px;
+     border: 2px solid black;
+     border-radius: 10px;
+ }
+
+ .form-container.hidden {
+     display: none;
+ }
+
+ .form-container input {
+     width: 100%;
+     padding: 10px;
+     margin: 8px 0;
+     border-radius: 6px;
+     border: 1px solid #ccc;
+ }
+
+ .form-buttons {
+     display: flex;
+     justify-content: space-between;
+     margin-top: 10px;
+ }
+
+ .cards-container {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 20px;
+     padding: 20px;
+     display: flex;
+     flex-direction: column;
+     height: 200%;
+     background-color: pink;
+ }
+ .lost-item-container{
+    height: 50%;
+    background-color: red;
+ }
+
+ .card {
+   
+    
+     background: white;
+     padding: 15px;
+     border-radius: 8px;
+     border: 2px solid black;
+     width: 270px;
+     height: 470px;
+     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+ }
+
+ .card img {
+     width: 100%;
+     height: 250px;
+     border-radius: 4px;
+ } 
+
+ #lost-item-container{
+    display: flex;
+    flex-direction: column;
+    
+ }
+ #lost-item-list{
+    display: flex;
+    flex-direction: row;
+    
+    align-items: flex-start;
+    margin-right:20px;
+ }
+ #lost-item-list .card{
+    margin-left: 20px;
+ }
+ #found-item-list .card{
+    margin-left:20px
+ }
+
+
+
+  

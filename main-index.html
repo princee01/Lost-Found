@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lost & Found</title>
+    <link rel="stylesheet" href="./style/index.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap" rel="stylesheet">
+    
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <img src="ChatGPT Image Aug 2, 2025, 04_27_12 PM.png" alt="Logo">
+            <span>Let's<span class="hq">Find</span></span>
+        </div>
+        <nav class="nav">
+            <div class="dropdown" onclick="toggleDropdown()">
+                <span class="badge">New</span> Post Item ▾
+                <div class="dropdown-options" id="dropdownOptions">
+                    <div onclick="openForm('lost')">Lost Item</div>
+                    <div onclick="openForm('found')">Found Item</div>
+                </div>
+            </div>
+            <div class="lost-items">Lost Items</div>
+            <a href="#">Found Items</a>
+            <a href="#">Responses</a>
+            <a href="#">My Listings</a>
+        </nav>
+        <div class="actions">
+            <button class="start-btn">Sign Out</button>
+        </div>
+    </header>
+
+
+    <!-- Form Section -->
+    <div id="postFormContainer" class="form-container hidden">
+        <form id="postItemForm">
+            <h2 id="formTitle">Post Item</h2>
+            <input type="text" placeholder="Item Name" name="itemName" required>
+            <input type="text" placeholder="Description" name="description" required>
+            <input type="text" placeholder="Enter a question (e.g. 'What color is it?')" name="question" required>
+            <input type="text" placeholder="Item Type" name="itemType" required>
+            <input type="file" name="image" accept="image/*">
+            <div class="form-buttons">
+                <button type="button" onclick="closeForm()">Close</button>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div> 
+
+    <!-- Cards Section -->
+    <div id="itemsContainer" class="cards-container">
+        <div id="lost-item-container">
+            <h2>Lost item</h2>
+            <div id="lost-item-list"></div>
+        </div>
+        <div id="found-item-container">
+            <h2>Found item</h2>
+            <div id="found-item-list"></div>
+        </div>
+    </div>
+
+    <script src="main_index.js"></script>
+</body> 
+
+</html>
+
+
+
+
+
+
+
